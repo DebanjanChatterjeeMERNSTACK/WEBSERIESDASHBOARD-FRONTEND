@@ -17,7 +17,7 @@ const Webseries = ({ edit }) => {
     const [id, setid] = useState("1")
     const [preview, setpreview] = useState("preview")
     const [previews, setpreviews] = useState([])
-
+    const [mess,setmess]=useState("")
 
 
 
@@ -75,8 +75,11 @@ const Webseries = ({ edit }) => {
                     body: formdata
                 })
                     .then(res => res.json())
-                    .then(json => alert(json.mess))
-
+                    .then(json => {alert(json.mess)
+                      setmess("")
+                    
+                    })
+                    setmess("series save")
 
             
 
@@ -121,7 +124,10 @@ const Webseries = ({ edit }) => {
                             body: formdata
                         })
                             .then(res => res.json())
-                            .then(json => alert(json.mess))
+                            .then(json => {alert(json.mess)
+                            setmess("")
+                            })
+                            setmess("series save")
 
                   
         } else {
@@ -138,6 +144,7 @@ const Webseries = ({ edit }) => {
 
     return (
         <>
+        {mess==="series save" ?  <div className="overlay"></div> :""}
             <div className="gridfill">
                 <div>
                     <Header />

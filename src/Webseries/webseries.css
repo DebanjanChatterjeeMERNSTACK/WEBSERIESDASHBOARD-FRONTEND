@@ -42,3 +42,12 @@
     border-radius: .5rem;
     border: 0;
 }
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(212, 212, 212, 0.61);
+}
