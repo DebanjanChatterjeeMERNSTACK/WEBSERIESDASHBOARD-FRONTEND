@@ -1,0 +1,44 @@
+.gridfill {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 18rem 3rem 1fr 2rem;
+}
+
+.gridnav {
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inputlal{
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+.label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Signika Negative', sans-serif;
+    color: #0500ff;
+}
+.btn{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Signika Negative', sans-serif;
+}
+.inputsize{
+    width: 80rem;
+    border: .2rem solid rgb(116, 116, 116);
+}
+.fleximg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.img2{
+    width: 6rem;
+    height: 6rem;
+    border-radius: .5rem;
+    border: 0;
+}
