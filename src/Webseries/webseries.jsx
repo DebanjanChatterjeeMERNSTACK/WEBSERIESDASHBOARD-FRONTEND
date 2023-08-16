@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header/header";
-import "./Webseries.css"
+import "./Webseries.css";
+import fast from "../logo/fast.gif"
 
 const Webseries = ({ edit }) => {
     const [editid, seteditid] = useState()
@@ -144,7 +145,7 @@ const Webseries = ({ edit }) => {
 
     return (
         <>
-        {mess==="series save" ?  <div className="overlay"></div> :""}
+        {mess==="series save" ?  <div className="overlay"><img src={fast} className="img9"/></div> :""}
             <div className="gridfill">
                 <div>
                     <Header />
