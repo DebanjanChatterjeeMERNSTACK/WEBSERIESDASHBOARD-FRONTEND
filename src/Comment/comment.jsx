@@ -10,9 +10,7 @@ const Comment = () => {
     useEffect(() => {
         fetch("http://localhost:9000/commentget")
             .then(res => res.json())
-            .then(json => {
-                setcomment(json)
-            })
+            .then(json => {   setcomment(json) })
     })
 
     const handleclick = (id) => {
